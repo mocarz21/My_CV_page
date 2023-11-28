@@ -1,0 +1,24 @@
+$sidebar-color: #030303da;
+$sidebar-arrow: #19092c;
+$pic-border: yellow;
+$title-color: white;
+$button-hire-me: #ff854c;
+$button-resume: #ffc64c;
+
+$TechFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+.line{
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 1px auto;
+  background-color: $button-hire-me;
+
+}
+
+.section-title{
+  h5{
+    text-align: center;
+  }
+}

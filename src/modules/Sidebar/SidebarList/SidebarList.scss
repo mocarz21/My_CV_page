@@ -1,0 +1,42 @@
+@import '../../../../setings.scss';
+
+.navbar-items{
+  .sidebar-profile-pic{
+    img{
+      border-radius: 90px;
+      margin-top: 10px;
+      height: 150px;
+      width: 150px;
+      display: flex;
+      vertical-align: middle;
+      margin: 0 auto;
+      object-fit: cover;
+      border: 3px solid $pic-border;
+    }
+  }
+
+  ul{
+    li{
+      color: white;
+      list-style-type: none;
+      cursor: pointer;
+      margin-top: 30px;
+      
+      svg{
+        margin: 0 25px 0 10px;
+      }
+    }
+  }
+}
+.navbar-items-only-icon{
+  ul{
+    li{
+      margin-top: 30px;
+      cursor: pointer;
+      list-style-type: none;
+      svg{
+        margin-left: 10px;
+      }
+    }
+  }
+}

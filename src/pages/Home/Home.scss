@@ -1,0 +1,65 @@
+@import '../../../setings.scss';
+
+.home{
+  height: 400px;
+  color: $title-color;
+  .home-content{
+    margin: auto;
+    padding: 10px;
+    margin-top: 100px;
+
+    h2{
+      margin-top: 20px;
+      color: $pic-border;
+    }
+
+  }
+  .button-for-action{
+    display: flex;
+    .button{
+      font-weight: bold;
+      text-align: center;
+      width: 180px;
+      padding: 10px;
+      border-radius: 90px;
+      cursor: pointer;
+      margin-top: 10px;
+      border: 3px solid $title-color;
+
+    }
+    .hire-me-button{
+      background-color: $button-hire-me;
+      
+      &:hover{
+        background-color: $title-color;
+        color: $button-hire-me;
+        width: 250px;
+        transition-duration: 1s;
+        border: 3px solid $button-hire-me;
+
+      }
+    }
+    .get-resume-button{
+      background-color: $button-resume;
+
+      &:hover{
+        background-color: $title-color;
+        color: $button-resume;
+        width: 250px;
+        transition-duration: 1s;
+        border: 3px solid $button-resume;
+        a{
+          color:$button-resume;
+        }
+      }
+
+      a{
+        text-decoration: none;
+        color:$title-color;
+        transition: color 0.3s;
+        font-weight: bold;
+      }
+
+    }
+  }
+}

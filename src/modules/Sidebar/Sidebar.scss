@@ -1,0 +1,40 @@
+@import '../../../setings.scss';
+
+.container-fluid{
+  padding: 0 0 !important;
+  overflow:  hidden;
+}
+
+.sidebar-section{
+  display: flex;
+  background-color: $sidebar-color;
+
+  .sidebar{
+    height: 100vh;
+    background-color: $sidebar-color;
+    width: 95px;
+    position: fixed;
+  }
+  .sidebar-expand{
+    width: 230px;
+  }
+
+  .icon-for-sidebar-expand-and-colapse{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    p{
+      svg{
+        background-color: $sidebar-arrow;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,66 @@
+@import '../../../../setings.scss';
+
+.project-list{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  &:hover{
+    transition-duration: 0.5s;
+    border-left: 8px solid rgb(71, 255, 148);
+  }
+
+  .title-and-colapse-option{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  .tech-used-in-project{
+    margin: 5px 5px 5px 5px;
+    p{
+      color: white;
+      background-color: tomato;
+      border-radius: 90px;
+      padding: 8px;
+      text-align: center;
+      font-family: $TechFont;
+      &:hover{
+        background-color: black;
+      }
+    }
+  }
+
+  .description{
+    margin: 5px;
+    .read-more{
+      color:green;
+    }
+  }
+
+  .Live-demo-button{
+    background-color: purple;
+    border-radius: 90px;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px;
+    &:hover{
+      background-color: green;
+      transition-duration: 0.5s;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      padding: 10px;      
+    }
+  }
+}
+
+.project-list-opened{
+  border-left: 8px solid rgb(71, 255, 148);
+  background-color: antiquewhite;
+  transition-duration: 1s;
+}

@@ -1,0 +1,28 @@
+@import '../../../../setings.scss';
+
+.about-section{
+  margin-top: 50px;
+  -webkit-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  .about-image{
+    img{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      margin-top: 50px;
+      border: 5px solid $sidebar-arrow;
+      margin: 50px;
+
+    }
+  }
+  
+  .about-details{
+    margin-top: 50px;
+
+    .about-title{
+      text-align: center;
+
+    }
+  }
+}
