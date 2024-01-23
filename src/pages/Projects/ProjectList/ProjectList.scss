@@ -64,3 +64,15 @@
   background-color: antiquewhite;
   transition-duration: 1s;
 }
+
+#dark{
+
+  .project-list{
+    box-shadow: none;
+    background-color: #38004c;
+    color: white;
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  }
+}

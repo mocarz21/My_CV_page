@@ -10,6 +10,7 @@
     -webkit-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
     -moz-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
     box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+    border-radius: 5px;
 
     &:hover{
       background-color: $button-hire-me;
@@ -60,11 +61,20 @@
     &:hover{
       background-color:rgb(58, 99, 211);
     }
-
   }
-
-
-
 }
 
+#dark .tech-content{
+  background-color: #38004c;
+  color: white;
+  box-shadow: none;
+  background-color: #38004c;
+  -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  &:hover{
+    background-color: tomato;
+    transition-duration: 2s;
+  }
+}
 

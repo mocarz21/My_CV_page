@@ -3,7 +3,10 @@ import './Education.scss'
 const Education = () =>{
 
   return(
-    <h1>E</h1>
+    <div className='container' id='education'>
+      <h1>E</h1>
+    </div>
+    
   )
 }
 export default Education;

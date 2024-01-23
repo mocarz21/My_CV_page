@@ -1,5 +1,6 @@
 import ProjectList from './ProjectList/ProjectList'
 import './Projects.scss'
+import Zoom from 'react-reveal/Zoom';
 
 const Projects = () => {
 
@@ -211,16 +212,18 @@ const Projects = () => {
 
   return(
 
-    <div className='container'>
+    <div className='container' id='projects'>
       <div className='section-title'>
         <h5>Projects</h5>
         <span className='line'></span>
       </div>
       <div className='row'>
         {data.map((item,index)=>(
-          <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-            <ProjectList {...item}/>
-          </div>
+          <Zoom bottom>
+            <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12' key={index}>
+              <ProjectList {...item}/>
+            </div>
+          </Zoom>
          ))}
       </div>
     </div>

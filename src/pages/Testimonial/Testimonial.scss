@@ -1,0 +1,66 @@
+@import '../../../setings.scss';
+
+.testimonial-section{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: auto;
+
+  .content-slider-main{
+    margin-top: 10px;
+
+    .content-slider{
+      padding: 10px;
+      color: white;
+      background-color: $bg-content-color;
+      margin: 5px;
+      margin-top: 50px;
+      text-align: center;
+      margin-bottom: 30px;
+      cursor: pointer;
+      height: 210px;
+      border-radius: 5px;
+      border: 1px solid black;
+
+      &:hover{
+        background-color: black;
+        transition-duration: 1s;
+        border: 3px solid $bg-content-color;
+      }
+  
+      .center-image{
+        height: 80px;
+        width: 80px;
+        border-radius: 90px;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        margin-top: -30px;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $pic-border;
+      }
+    }
+  }
+
+
+}
+
+@media(max-width:1000px){
+
+  .slick-prev:before, .slick-next:before{
+    display: none;
+  }
+
+}
+
+#dark{
+  .content-slider{
+    background-color: #38004c;
+    color: white;
+    box-shadow: none;
+    background-color: #38004c;
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  }
+}

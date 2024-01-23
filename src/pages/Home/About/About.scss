@@ -5,6 +5,7 @@
   -webkit-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
   -moz-box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
   box-shadow: 4px 7px 32px -1px rgba(66, 68, 90, 1);
+  border-radius: 5px;
   .about-image{
     img{
       height: 300px;
@@ -25,4 +26,22 @@
 
     }
   }
+}
+
+#dark{
+
+  .about-section{
+    box-shadow: none;
+    background-color: #38004c;
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 42);
+  }
+}
+
+@media(max-width: 1000px){
+  .about-section{
+    height: auto;
+  }
+
 }

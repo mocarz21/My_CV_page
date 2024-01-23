@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Roll from 'react-reveal/Roll';
 import './TechStack.scss'
 
 const TechStack = () =>{
@@ -77,23 +78,25 @@ const TechStack = () =>{
   ]
 
   return(
-    <div className='container tech-stack-section'>
+    <div className='container tech-stack-section' id='tech'>
       <div className='section-title'>
         <h5>Tech Stack</h5>
         <span className='line'></span>
       </div>
-      <div className='row'>
-        {data.slice(0,showMoreTechStack).map((item,index)=>(
-          <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'>
-            <div className='tech-content'>
-              <span className='tech-number' style={{backgroundColor: colors[index]}}>
-                {index + 1}
-              </span>
-              <p>{item.name}</p>
+      <Roll right cascade>
+        <div className='row'>
+          {data.slice(0,showMoreTechStack).map((item,index)=>(
+            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12' key={index} >
+              <div className='tech-content' style={{backgroundColor: colors[index]}}>
+                <span className='tech-number' style={{backgroundColor: colors.reverse()[index]}}>
+                  {index + 1}
+                </span>
+                <p>{item.name}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Roll>
       {showMoreTechStack < data.length &&<div className='load-more-tech-stack' onClick={loadMore}>
         Load more
       </div>}

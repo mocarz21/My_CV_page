@@ -84,7 +84,7 @@ const WorkExperience = () =>{
   ]
   return(
 
-    <div className='container workexperience-section'>
+    <div className='container workexperience-section' id='work'>
       <div className='section-title'>
         <h5>Work experience</h5>
         <span className='line'></span>
@@ -93,19 +93,20 @@ const WorkExperience = () =>{
         <VerticalTimeline lineColor='#FF1042'> 
           {data.map((item, index)=>(
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work" 
               contentStyle={{ background: colors[index+1], color: '#fff' }}
               contentArrowStyle={{ borderRight: '17px solid  gold' }}
               date={item.year}
               dateClassName='date-class'
               iconStyle={{ background: colors[index], color: '#fff' }}
               icon={item.icon}
+              key={index}
             >
               <h3 className="vertical-timeline-element-title">{item.companyname}</h3>
               <h4 className="vertical-timeline-element-subtitle">{item.position}</h4>
               <div className="row">
                 {item.techskills && item.techskills.map((item, index) =>(
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
                     <div className="tech-skills">
                       <p>{item.techname}</p>
                     </div>
