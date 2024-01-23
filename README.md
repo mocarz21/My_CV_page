@@ -7,6 +7,7 @@ This part of the project focuses on presenting my professional portfolio and res
 ## Features
 
 - **Interactive UI**: Utilizes React components for a dynamic and responsive user experience.
+- **Bootstrap Integration**: Employs Bootstrap for responsive design and pre-styled components, enhancing the UI with a consistent and modern look.
 - **Theme Switching**: Incorporated theme switching functionality with light and dark modes.
 - **Responsive Design**: The layout adapts to different screen sizes, ensuring a seamless experience across devices.
 - **Scroll Animations**: Integrated scroll animations to enhance the visual appeal of the website.
@@ -15,6 +16,7 @@ This part of the project focuses on presenting my professional portfolio and res
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
+- **Bootstrap**: A powerful front-end framework for faster and easier web development.
 - **SCSS**: Used for styling components with enhanced CSS capabilities.
 - **React Icons**: Used to include icons from various libraries.
 - **React Reveal**: For adding animations on scroll.
