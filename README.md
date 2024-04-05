@@ -21,3 +21,4 @@ This part of the project focuses on presenting my professional portfolio and res
 - **React Icons**: Used to include icons from various libraries.
 - **React Reveal**: For adding animations on scroll.
 - **React Scroll**: To enable smooth scrolling and linking to different sections of the page.
+# PitApp
